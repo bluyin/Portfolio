@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="homebutton.css" />
+        <link rel="stylesheet" href="learnmore.css" />
+        <link rel="stylesheet" href="download.css" />
+        <link rel="stylesheet" href="astronauta.css" />
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="botonguapo">
+                        <button data-text="Awesome" class="button">
+                            <span class="actual-text">&nbsp;dev&nbsp;</span>
+                            <span class="hover-text" aria-hidden="true">&nbsp;dev&nbsp;</span>
+                        </button>
+                    </div>
+                    
+                    <ul id="sidemenu">
+                        
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    
+                    <p>Frontend Dev</p>
+                    
+                    <h1>Hi, I'm <span>Juan</span><br />de Miguel From Spain</h1>
+                    <div class="box-of-star1">
+                        <div class="star star-position1"></div>
+                        <div class="star star-position2"></div>
+                        <div class="star star-position3"></div>
+                        <div class="star star-position4"></div>
+                        <div class="star star-position5"></div>
+                        <div class="star star-position6"></div>
+                        <div class="star star-position7"></div>
+                      </div>
+                      <div class="box-of-star2">
+                        <div class="star star-position1"></div>
+                        <div class="star star-position2"></div>
+                        <div class="star star-position3"></div>
+                        <div class="star star-position4"></div>
+                        <div class="star star-position5"></div>
+                        <div class="star star-position6"></div>
+                        <div class="star star-position7"></div>
+                      </div>
+                      <div class="box-of-star3">
+                        <div class="star star-position1"></div>
+                        <div class="star star-position2"></div>
+                        <div class="star star-position3"></div>
+                        <div class="star star-position4"></div>
+                        <div class="star star-position5"></div>
+                        <div class="star star-position6"></div>
+                        <div class="star star-position7"></div>
+                      </div>
+                      <div class="box-of-star4">
+                        <div class="star star-position1"></div>
+                        <div class="star star-position2"></div>
+                        <div class="star star-position3"></div>
+                        <div class="star star-position4"></div>
+                        <div class="star star-position5"></div>
+                        <div class="star star-position6"></div>
+                        <div class="star star-position7"></div>
+                      </div>
+                      <div data-js="astro" class="astronaut">
+                        <div class="head"></div>
+                        <div class="arm arm-left"></div>
+                        <div class="arm arm-right"></div>
+                        <div class="body">
+                          <div class="panel"></div>
+                        </div>
+                        <div class="leg leg-left"></div>
+                        <div class="leg leg-right"></div>
+                        <div class="schoolbag"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" />
+                    </div>
+                    
+                    <div class="about-col-2">
+                        
+                        <h1 class="sub-title">About Me 
+                            
+                           </h1>
+                        
+                        <p>I am a programmer mainly focused on the frontend, although I am always willing to learn and experiment with new things. I am a hardworking and dedicated person who always strives to do things in the best possible way. I am very perfectionist in my work and I do not settle for mediocre results.</p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br />Web app Development</li>
+                                <li><span>App Development</span><br />Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2016</span><br />UI/UX Design Training at ET Institute</li>
+                                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                                <li><span>2014</span><br />BBA from ISM Bangalore.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>CEV</span><br />High National Diploma: Computing</li>
+                                <li><span>CEV</span><br />Grado Superior: Desarrollo de Apps Multiplataforma</li>
+                                <li><span>CEV</span><br />Grado Medio: Imagen y sonido</li>
+                                <li><span>E.S.O</span><br />Gredos San Diego</li>
+                            </ul>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------services---------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                        <a href="#">
+                            <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Learn More</span>
+                          </button>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                        <a href="#">
+                            <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Learn More</span>
+                          </button>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                        <a href="#">
+                            <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Learn More</span>
+                          </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" />
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" />
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" />
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- ----------contact------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> jdemigueldev@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +34 633 936 534</p>
+                        
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        
+                       
+                        
+                        <button class="download-button">
+                            <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg> CV</div>
+                            <div class="download">
+                              <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
+                            </div>
+                        </button>
+                       
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/jdemigueldev@gmail.com" method="POST" />
+                            
+                            <input type="text" name="Name" placeholder="Your Name" required />
+                            <input type="email" name="Email" placeholder="Your Email" required />
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>Copyright © jdemigueldev. Made wtih <i class="fas fa-heart"></i> by <a href="https://github.com/jdemigueldev">jdemigueldev</a></p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
