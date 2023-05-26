@@ -104,6 +104,8 @@ nav ul li a:hover::after {
 }
 .download-button {
     margin-top: 20px;
+    margin-bottom: 50px;
+    float: right;
 }
 
 .tab-titles {
@@ -337,9 +339,29 @@ form .btn2 {
 nav .fas {
     display: none;
 }
+
 @media only screen and (max-width: 600px) {
     #header {
-        /*background-image: url(images/phone-background.png);*/
+        /*background-image: url(images/pngwing.com-2.png);*/
+    }
+    .box-of-star1 {
+        display: none;
+    }
+    .box-of-star2 {
+        display: none;
+    }
+    .box-of-star3 {
+        display: none;
+    }
+    .box-of-star4 {
+        display: none;
+    }
+    .astronaut {
+        display: none;
+    }
+    .download-button {
+        float: right;
+        margin-bottom: 20px;
     }
     .header-text {
         margin-top: 100%;
@@ -353,7 +375,7 @@ nav .fas {
         font-size: 25px;
     }
     nav ul {
-        background: #37ff8b;
+        background: #6e5494;
         position: fixed;
         top: 0;
         right: -200px;
